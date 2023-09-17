@@ -1,0 +1,15 @@
+<div>
+    <h1>Ex02</h1>
+    <ul>
+        <li *ngFor="let tarefa of tarefas">
+            <div>
+                {{tarefa.text}} - {{tarefa.time}}
+            </div>
+        </li>
+    </ul>
+    <label for="new-tarefa-text">Tarefa: </label>
+    <input type="text" name="new-tarefa-text" [(ngModel)] = newTarefaText>
+    <label for="new-tarefa-time">Horário: </label>
+    <input type="text" name="new-tarefa-time" [(ngModel)] = newTarefaTime>
+    <button type="submit" (click)="$event.preventDefault(); adicionarTarefa()">Adicionar tarefa</button>
+</div>

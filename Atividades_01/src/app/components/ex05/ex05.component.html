@@ -1,0 +1,13 @@
+<div>
+    <h1>Ex05</h1>
+    <ul>
+        <li *ngFor="let product of products">
+            {{product.name}} - R${{product.price}} - {{product.description}}
+        </li>
+    </ul>
+    <button (click)="ordenarPorNomeAZ()">Ordenar A-Z</button>
+    <button (click)="ordenarPorNomeZA()">Ordenar Z-A</button>
+    <br>
+    <button (click)="ordenarPorPrecoCrescente()">Preço crescente</button>
+    <button (click)="ordenarPorPrecoDecrescente()">Preço decrescente</button>
+</div>

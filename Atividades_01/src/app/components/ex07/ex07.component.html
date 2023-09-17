@@ -1,0 +1,18 @@
+<div>
+    <h1>Ex07</h1>
+    <button (click)="exibirPainel('painel1')">Painel1</button>
+    <button (click)="exibirPainel('painel2')">Painel2</button>
+    <button (click)="exibirPainel('painel3')">Painel3</button>
+
+    <div *ngIf="painelAtual == 'painel1'">
+        <p>Painel 1</p>
+    </div>
+
+    <div *ngIf="painelAtual == 'painel2'">
+        <p>Painel 2</p>
+    </div>
+
+    <div *ngIf="painelAtual == 'painel3'">
+        <p>Painel 3</p>
+    </div>
+</div>

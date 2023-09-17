@@ -1,0 +1,12 @@
+<div>
+    <h1>Ex10</h1>
+    <p>Nome: Bernardo</p>
+    <p>Email: bernardo.ch.be@gmail.com</p>
+    <div *ngIf="showMore">
+        <p>Idade: 18</p>
+        <p>Aniversário: 16/03/2005</p>
+        <p>Telefone: 99999-9999</p>
+        <p>Endereço: Rua dos Bobos, 69</p>
+    </div>
+    <button (click)="toggleShowMore()">Mostrar {{text}}</button>
+</div>

@@ -1,0 +1,15 @@
+<div>
+    <h1>Ex09</h1>
+    <label for="tarefaText">Tarefa:</label>
+    <input type="text" name="tarefaText" [(ngModel)]="tarefaText">
+    <label for="tarefaTime">Horário:</label>
+    <input type="text" name="tarefaTime" [(ngModel)]="tarefaTime">
+    <button (click)="adicionarTarefa()">Adicionar tarefa</button>
+
+    <ul>
+        <li *ngFor="let tarefa of tarefas; index as ii">
+            {{tarefa.text}} - {{tarefa.time}}
+            <button (click)="removerTarefa(tarefas[ii])">Remover</button>
+        </li>
+    </ul>
+</div>

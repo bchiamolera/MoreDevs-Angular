@@ -1,0 +1,12 @@
+<div>
+    <h1>Ex04</h1>
+    <label for="username">Username: </label>
+    <input type="text" name="username" id="username" [(ngModel)]=username required>
+
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" [(ngModel)]=password required>
+    
+    <button type="submit" (click)="login()">Login</button>
+    <p *ngIf="showError">Username e/ou senha incorreto(s)!</p>
+    <p *ngIf="showSuccess">Login realizado com sucesso!</p>
+</div>

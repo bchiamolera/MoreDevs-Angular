@@ -1,0 +1,10 @@
+<div class="col-md-4">
+    <h1>Ex08</h1>
+    <input type="text" [(ngModel)]="paisPesquisa">
+    <ul>
+        <li *ngFor="let pais of filtrarPaises()">
+            <p>{{ pais.name }}</p>
+            <img [src]="pais.flag" class="img-fluid" alt="">
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,11 @@
+<div class="col-md-4">
+    <h1>Ex11</h1>
+    <ul>
+        <li *ngFor="let image of images">
+            <img [src]="image" class="img-fluid" alt="image" (click)="openModal(image)">
+        </li>
+    </ul>
+    <div *ngIf="modalOpen">
+        <img [src]="modalImage" class="img-fluid" alt="" (click)="closeModal()">
+    </div>
+</div>

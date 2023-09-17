@@ -1,0 +1,18 @@
+<div>
+    <h1>Ex12</h1>
+    <form (ngSubmit)="onSubmit()">
+        <label for="name">Nome:</label>
+        <input type="name" name="name" [(ngModel)]="user.name" required>
+        <p *ngIf="usuarioInvalido">Usuário inválido</p>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" [(ngModel)]="user.email" required email>
+        <p *ngIf="emailInvalido">Email inválido</p>
+
+        <label for="password">Senha:</label>
+        <input type="password" name="password" [(ngModel)]="user.password" required minlength="6">
+        <p *ngIf="senhaInvalida">Senha inválida. Deve conter mais de 6 dígitos</p>
+
+        <button type="submit">Registrar</button>
+    </form>
+</div>
